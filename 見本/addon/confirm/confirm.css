@@ -1,0 +1,149 @@
+@charset "utf-8";
+
+
+body{
+	overflow-y : scroll;
+}
+
+
+div#confirm_field{
+	width : 960px;
+	margin : 50px auto;
+	padding : 10px 0;
+	background : #ffffff;
+	border : 1px solid #cccccc;
+	border-radius : 7px;
+	box-shadow : 0 0 7px rgba( 0, 0, 0, 0.2 );
+}
+
+div#confirm_field{
+	display : none;
+}
+
+div#confirm_field h2{
+	width : 90%;
+	margin : 0 auto;
+	padding : 15px 0;
+	font-size : 135%;
+	font-weight : bold;
+	text-align : center;
+}
+
+div#confirm_field dl{
+	width : 90%;
+	margin : 0 auto;
+	overflow : hidden;
+}
+
+div#confirm_field dl dt{
+	clear : both;
+	width : 30%;
+	float : left;
+	border-top : 1px solid #cccccc;
+	padding : 15px 0;
+	text-align : right;
+}
+
+div#confirm_field dl dd{
+	width : 65%;
+	float : right;
+	border-top : 1px solid #cccccc;
+	padding : 15px 0 15px 5%;
+}
+
+div#confirm_field p#confirm_submit{
+	width : 90%;
+	margin : 0 auto;
+	padding : 15px 0;
+	border-top : 1px solid #cccccc;
+}
+
+div#confirm_field input[type="button"]{
+	padding : 9px 15px;
+	vertical-align : middle;
+	line-height : 1;
+	border-radius : 3px;
+	color : #ffffff;
+	font-family : inherit;
+	-webkit-appearance : none;
+	font-size : 100%;
+}
+
+div#confirm_field input#confirm_submit_button{
+	background : #5cb85c;
+	border : 1px solid #4cae4c;
+	margin-left : 35%;
+}
+
+div#confirm_field input#confirm_submit_button:hover{
+	cursor : pointer;
+	background : #449d44;
+	border : 1px solid #398439;
+}
+
+div#confirm_field input#confirm_cancel_button{
+	background : #d9534f;
+	border : 1px solid #d43f3a;
+	margin-left : 20px;
+}
+
+div#confirm_field input#confirm_cancel_button:hover{
+	cursor : pointer;
+	background : #c9302c;
+	border : 1px solid #ac2925;
+}
+
+
+
+
+
+
+
+
+/* --responsive----------------------------------------------------------------------------------------------------------------- */
+
+/* 640pixel start */
+@media screen and ( max-width : 640px ){
+
+div#confirm_field{
+	width : 95%;
+}
+
+div#confirm_field h2{
+	text-align : left;
+}
+
+div#confirm_field dl{
+	overflow : visible;
+}
+
+div#confirm_field dl dt{
+	width : auto;
+	float : none;
+	text-align : left;
+	padding : 15px 0 0;
+	font-weight : bold;
+}
+
+div#confirm_field dl dt:before{
+	content : "【";
+}
+
+div#confirm_field dl dt:after{
+	content : "】";
+}
+
+div#confirm_field dl dd{
+	width : auto;
+	float : none;
+	border-top : none;
+	padding : 0px 0 15px 0px;
+}
+
+div#confirm_field input#confirm_submit_button{
+	margin-left : 0;
+}
+
+}
+/* 640pixel end */
+
